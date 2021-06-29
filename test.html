@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+<a href="#" data-target="slide-out" class="sidenav-trigger">
+    <i id="left-panel-icon" class="material-icons">menu</i>
+</a>
+<!--v-bind = props:['todo'] = element de la boucle for-->
+<!--v-bind key = index de la liste-->
+<header>
+
+    <div id="menu">
+        <ul id="slide-out" class="sidenav">
+            <menu-nav
+                    v-for="item in menuList"
+                    v-bind:todo="item"
+                    v-bind:key= "item.id"
+            ></menu-nav>
+        </ul>
+    </div>
+
+</header>
+
+<div class="container">
+    <div id="computed" class="card hoverable">{{allData}}</div>
+    <div id="exemple-api" class="card hoverable">
+        <h5 class="orange-text center">Un exemple API avec axios et watch:</h5>
+        <label for="question">Merci de poser une question :</label>
+        <input id="question" v-model="question" class="validate"/>
+        <p class="green-text">{{ reponse }}</p>
+    </div>
+
+    <div id="styles" class="card hoverable">
+        <h5 class="purple-text  center">Un peu de CSS</h5>
+        <p v-bind:class="{green: estVert}" v-bind:style="{padding: padding}">Paragraphe au fond vert</p>
+        <p v-bind:class="{red: estRouge}" v-bind:style="{padding: padding}">Paragraphe au fond rouge</p>
+        <button class="btn" @click="changeBackground">Change le CSS</button>
+    </div>
+
+    <div id="todo-list" class="card hoverable">
+        <h5 class="purple-text  center">La legendaire TODO LISTES</h5>
+        <form v-on:submit.prevent="ajouterTache">
+            <label for="nouvelleTache">Ajouter une tache</label>
+            <input
+                    id="nouvelleTache"
+                    v-model="nouvelleTacheTexte"
+                    class="validate"
+                    placeholder="Apprende VueJs"
+            />
+            <button class="btn orange white-text">Ajouter</button>
+        </form>
+        <!--
+            Notez l’attribut is=todo-item. Il est nécessaire dans le template du DOM,
+            car seuls les éléments <li> sont valides à l’intérieur des <ul>. Cela fait la même chose que <todo-item>,
+            mais permet de contourner les erreurs potentielles d’analyse des navigateurs
+        -->
+
+        <ul class="collection">
+            <li
+                    is="liste-item"
+                    v-for="(tache, index) in taches"
+                    v-bind:key="tache.id"
+                    v-bind:title="tache.title"
+                    v-on:remove="taches.splice(index, 1)">
+
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<!--Appel axios HTTP-->
+<script src="https://cdn.jsdelivr.net/npm/axios@0.12.0/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.13.1/lodash.min.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/test.js" type="text/javascript"></script>
+
+
+</body>
+</html>

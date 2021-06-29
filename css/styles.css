@@ -1,0 +1,38 @@
+html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #333;
+    color: white;
+    font-size: 20px;
+}
+
+/*MENU LEFT*/
+#left-panel-icon{
+    font-size: 50px;
+}
+/*CONTAINER*/
+.card{
+    color: #333333;
+    padding: 20px;
+}
+.VbindTest:hover{
+    color: brown;
+    cursor: pointer;
+}
+
+/*Card amiibo*/
+.amiibo-card{
+    height: 50vh;
+    width: 30%;
+}
+
+    /*FORM*/
+.form-contact{
+    background-color: white;
+    padding: 20px;
+    color: #333333;
+}

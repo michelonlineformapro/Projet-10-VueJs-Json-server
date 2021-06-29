@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link id="test" rel="stylesheet" v-bind:href="urlCSS"/>
+</head>
+<body>
+
+
+
+
+
+<a href="#" data-target="slide-out" class="sidenav-trigger">
+    <i id="left-panel-icon" class="material-icons">menu</i>
+</a>
+<!--v-bind = props:['todo'] = element de la boucle for-->
+<!--v-bind key = index de la liste-->
+<header>
+
+    <div id="menu">
+        <ul id="slide-out" class="sidenav">
+            <menu-nav
+                    v-for="item in menuList"
+                    v-bind:todo="item"
+                    v-bind:key= "item.id"
+            ></menu-nav>
+        </ul>
+    </div>
+
+</header>
+
+<div class="container">
+    <div class="row" id="recettes" >
+        <input type="text">
+        <br />
+        <div class="amiibo-card col s4 card hoverable offset-s2"  v-bind:key="amiibo.tail" v-for="amiibo in info">
+            <h4 class="text-info">Series : {{amiibo.amiiboSeries}}</h4>
+            <img class="center align-center" :src="amiibo.image" width="25%" :title="amiibo.name">
+            <p class="text-danger">Personnage : {{amiibo.character}}</p>
+            <p class="text-warning">Jeux : {{amiibo.gameSeries}}</p>
+            <p class="text-info">Nom de Amiibo : {{amiibo.name}}</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<!--Appel axios HTTP-->
+<script src="https://cdn.jsdelivr.net/npm/axios@0.12.0/dist/axios.min.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/recettes.js" type="text/javascript"></script>
+
+
+</body>
+</html>

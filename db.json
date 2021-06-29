@@ -1,0 +1,16 @@
+{
+  "produits": [
+    {
+      "id": 1,
+      "title": "Ecran plat",
+      "marque": "Samsung",
+      "image": "https://www.manutan.fr/img/S/GRP/ST/AIG6011563.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Four",
+      "marque": "Tefal",
+      "image": "https://image.darty.com/encastrable/four-four/four_encastrable/electrolux_eod6p60x0_s1904014685814D_174109783.jpg"
+    }
+  ]
+}
