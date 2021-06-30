@@ -19,6 +19,7 @@ new Vue({
             {id: 0, text: 'accueil', url: 'index.html'},
             {id: 1, text: 'recette', url: 'recette.html'},
             {id: 2, text: 'test',url: 'test.html' },
+            {id: 3, text: 'API',url: 'api.html' },
         ]
     }
 });

@@ -42,7 +42,7 @@
         <p class="VbindTest" v-bind:title="message">Au survol de la souris une info bulle apparait grace a l'ajout d'un attribut title (similaire a la balise img title="Du texte")</p>
     </div>
 
-    <div id="input-reactif" class="card hoverable">
+    <div id="input-reatif" class="card hoverable">
         <h5 class="orange-text lighten-1">3) Un input type texte reactif sans validation</h5>
         <input v-model="message" class="validate" placeholder="Merci d'enter du texte" />
         <p>Résultat : <b class="white-text green" style="padding: 10px">{{message}}</b></p>
@@ -59,7 +59,7 @@
         <p>On utilise v-if comme attribut pour afficher ou cacher un element (bool) et 2 methodes sur des boutons pour afficher et cacher du texte</p>
         <p v-if="voir">Element visible</p>
 
-        <button @click="show" type="submit" id="show" class="btn red">v-if voir = false</button>
+        <button v-on:click="show" type="submit" id="show" class="btn red">v-if voir = false</button>
         <button v-on:click="hide" type="submit" id="hide" class="btn green">v-if voir = true</button>
 
         <button v-if="variable = !variable" class="btn purple" @click="ShowHide">Voir + caché</button>
@@ -72,7 +72,6 @@
         <ol>
             <li v-for="liste in listes">
                 {{ liste.texte }}
-                et le nombre {{ liste.nombre }} ans
             </li>
         </ol>
         <em class="purple-text">Le même concept est utilisé dans un composant pour la sidenav left</em>
@@ -85,6 +84,21 @@
             <input v-model="message" placeholder="Input reactif"  type="text" class="validate">
         </div>
         <p>{{ message }}</p>
+    </div>
+
+
+    <div id="metCom" class="card hoverable">
+
+        <form action="#">
+            <p>
+              <label>
+                 <input type="checkbox" v-model="success">
+                  <span class="green-text" :class="test()">TEST Methods Vs Computed</span>
+                  <input type="text" v-model="message" />
+                  <span>{{message}}</span>
+              </label>
+            </p>
+        </form>
     </div>
 </div>
 

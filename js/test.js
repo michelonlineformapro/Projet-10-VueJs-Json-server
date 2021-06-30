@@ -121,8 +121,7 @@ let todolist = new Vue({
         taches:[
             {
                 id: 1,
-                title: 'Apprendre VueJs',
-                
+                title: 'Apprendre VueJs'
             }
         ],
         nextTodoId: 2

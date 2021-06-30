@@ -24,7 +24,7 @@ new Vue({
 
 //Un input reactif
 let input = new Vue({
-    el:"#input-reactif",
+    el:"#input-reatif",
     data:{
         //init de la valeur de input
         message: ""
@@ -39,6 +39,7 @@ let cond = new Vue({
     },
     template:
         `
+          
           <div class="card hoverable">
           <h4 class="orange-text">Condition v-if - v-else-id et v-else</h4>
           <p>Pour le test = nom de la variable cond + nombre (qui est dans le data-binding)  = 1 - 2 ou 3</p>
@@ -82,9 +83,9 @@ new Vue({
     el:"#list-for",
     data:{
         listes:[
-            {texte: "VueJs c cool", nombre: 4},
-            {texte: "Ici la boucle for", nombre: 10},
-            {texte: "Pour lister des elements texte", nombre: -5},
+            {texte: "VueJs c cool"},
+            {texte: "Ici la boucle for"},
+            {texte: "Pour lister des elements texte"},
         ]
     }
 });
@@ -95,6 +96,32 @@ new Vue({
     data:{
         message: 'Input reactif'
     }
+})
+
+//Methods vs Computed
+new Vue({
+    el:"#metCom",
+    data:{
+        success: false,
+        message: ""
+    },
+    methods:{
+        test: function (){
+            console.log('test est appelé')
+            return  this.success === true ? 'Ok' : 'Erreur'
+        }
+    }
+
+    /* Modifier HTML supprimer parentese a test = <span class="green-text" :class="test">TEST Methods Vs Computed</span>
+     computed:{
+        test: function (){
+            console.log('test est appelé')
+            return  this.success === true ? 'Ok' : 'Erreur'
+        }
+    }
+    met les valeur en cache seul la checkbox est modifiée
+    on peux creer des getter et setters get: et set: function(value)
+     */
 })
 
 
