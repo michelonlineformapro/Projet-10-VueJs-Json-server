@@ -4,7 +4,9 @@ new Vue({
     el:"#apiJson",
     data(){
         return{
+            //Tableau vide des resultats de la recherche (input v-model="rechercher")
             rechercher: [],
+            //Tableau vide des produits collection db.json
             produits: []
         }
     },
@@ -12,12 +14,16 @@ new Vue({
     mounted() {
         //on utilise axios et la methode GET + url
         axios.get('http://localhost:3000/produits')
+            //Promesse pour afficher les resultats dans le tableau produits
             .then(response => this.produits = response.data)
             .then(this.appelApi)
     },
+    //Fonction des resultats de recherche
     methods:{
         appelApi: async function(){
+            //Parcours de la collestion depuis input type text
             const response = await fetch('http://localhost:3000/produits')
+            //Reponse au format json
             this.produits = await  response.json();
         }
     }

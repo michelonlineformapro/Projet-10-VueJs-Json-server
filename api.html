@@ -34,7 +34,9 @@
 <div class="container">
 
     <div class="row" id="apiJson" >
+        <!--Ajout du champ formulaire input type text pour entrer un element a rechercher-->
         <input class="validate" v-model="rechercher" style="color: white; font-size: 40px" placeholder="Nom du produit">
+        <!--boucle de parcours de la collection produits (v-for) + condition if si input type text === title ou marque de la collection = on affiche le résultats -->
         <div class="amiibo-card col s4 card hoverable"  v-bind:key="produits.id" v-for="produit in produits" v-if="rechercher === produit.title || rechercher === produit.marque || !rechercher">
             <h4 class="text-info">Series : {{produit.title}}</h4>
             <img class="center align-center card-image" :src="produit.image" width="100%" :title="produit.title">
