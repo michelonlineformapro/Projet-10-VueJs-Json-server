@@ -4,67 +4,100 @@
       "id": 1,
       "title": "Ecran plat",
       "marque": "Samsung",
-      "image": "https://www.manutan.fr/img/S/GRP/ST/AIG6011563.jpg"
+      "image": "https://www.manutan.fr/img/S/GRP/ST/AIG6011563.jpg",
+      "description": "La marque coréenne Samsung, leader incontesté du marché de la télévision, cherche à innover sans cesse, pour proposer le meilleur de la qualité d'image et du design pour ces écrans TV HD, full HD, 4K, ultra HD, 8K... Il existe une très large gamme en TV Samsung : Neo QLED, incurvé, LED, QLED 4K, QLED 8K, TV The Frame, TV verticale The Sero, The Terrace... Autant d'innovations pour mieux s'adapter à votre intérieur et à vos envies. Envie d'acquérir un téléviseur Samsung ? Découvrez les offres de remboursement Samsung !",
+      "prix": 1252.25,
+      "categorie": "electro-menager"
     },
     {
       "id": 2,
       "title": "Switch",
       "marque": "Nintendo",
-      "image": "https://cdn.pocket-lint.com/r/s/1200x/assets/images/140007-games-review-nintendo-switch-review-image1-lp6zy9awm0.jpg"
+      "image": "https://cdn.pocket-lint.com/r/s/1200x/assets/images/140007-games-review-nintendo-switch-review-image1-lp6zy9awm0.jpg",
+      "description": "La Nintendo Switch peut se transformer pour s'adapter à votre situation, de manière à ce que vous puissiez profiter de vos jeux quel que soit votre rythme de vie.\n\nC'est une nouvelle ère où vous ne devez plus adapter votre quotidien pour pouvoir jouer, c'est désormais votre console qui s'adapte à votre style de vie.\n\nProfitez de vos jeux où, quand et avec qui vous le souhaitez !",
+      "prix": 252.25,
+      "categorie": "jeux-video"
     },
     {
       "id": 3,
       "title": "Table bois",
       "marque": "IKEA",
-      "image": "https://cdn3.hellin.fr/13839-zoom_default/table-a-manger-rectangulaire-en-bois-pieds-metal-jonas.jpg"
+      "image": "https://cdn3.hellin.fr/13839-zoom_default/table-a-manger-rectangulaire-en-bois-pieds-metal-jonas.jpg",
+      "description": "Cette table ne vous décevra pas. Son design est simple mais pratique, sa structure en métal la rend solide et elle convient à tous les intérieurs. La surface effet bois est idéale pour un usage quotidien.",
+      "prix": 52.25,
+      "categorie": "meuble"
     },
     {
       "id": 4,
       "title": "MacBook",
       "marque": "Apple",
-      "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mbp-spacegray-select-202011_GEO_EMEA_LANG_FR?wid=904&hei=840&fmt=jpeg&qlt=80&.v=1613672865000"
+      "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mbp-spacegray-select-202011_GEO_EMEA_LANG_FR?wid=904&hei=840&fmt=jpeg&qlt=80&.v=1613672865000",
+      "description": "Notre portable le plus fin et le plus léger est métamorphosé par la puce Apple M1. Avec des performances de processeur jusqu’à 3,5 fois plus élevées. Un processeur graphique jusqu’à 5 fois plus rapide. Une vitesse d’apprentissage automatique jusqu’à 9 fois supérieure grâce à notre Neural Engine le plus avancé. Une autonomie record sur MacBook Air. Et un design silencieux, sans ventilateur. C’est un véritable poids lourd de puissance, dans un format toujours aussi léger.",
+      "prix": 2552.25,
+      "categorie": "electro-menager"
     },
     {
       "id": 5,
       "title": "Elctribe ESX",
       "marque": "Korg",
-      "image": "https://img.audiofanzine.com/images/u/product/normal/korg-electribe-esx1sd-108111.jpg"
+      "image": "https://img.audiofanzine.com/images/u/product/normal/korg-electribe-esx1sd-108111.jpg",
+      "description": "Korg Electribe SX Esx-1 Musique Production Station Avec / AC Adaptateur Coffret, sampler / echantilloneur",
+      "prix": 555.25,
+      "categorie": "musique"
     },
     {
       "id": 6,
       "title": "Four",
       "marque": "Tefal",
-      "image": "https://services.electrolux-medialibrary.com/118ed4c0ee6546f4a7684c7fef8c985aNrZmYkM861d1f/view/WS_PN/PSEEOV190PE00057.png"
+      "image": "https://services.electrolux-medialibrary.com/118ed4c0ee6546f4a7684c7fef8c985aNrZmYkM861d1f/view/WS_PN/PSEEOV190PE00057.png",
+      "description": "UN FOUR PARFAIT POUR LA VIE DE TOUS LES JOURS : compact et performant, ce four d'une capacité de 26L est idéal pour griller, rôtir ou cuisiner au quotidien et ne prend pas beaucoup de place sur votre plan de travail.",
+      "prix": 120.25,
+      "categorie": "electro-menager"
     },
     {
       "id": 7,
       "title": "Carte son",
       "marque": "Focusrite",
-      "image": "https://thumbs.static-thomann.de/thumb/orig/pics/bdb/468428/14219472_800.jpg"
+      "image": "https://thumbs.static-thomann.de/thumb/orig/pics/bdb/468428/14219472_800.jpg",
+      "description": "L’interface audio USB pour Mac et PC Focusrite Scarlett 2i2 dispose de deux entrées ligne symétriques pour connecter des synthétiseurs ou tous autres types de sources audio au format ligne et deux sorties symétriques pour le monitoring. Les deux entrées combo peuvent accueillir aussi bien un jack guitare 6,35 ainsi qu’un XLR micro. Les deux préamps Scarlett de très haute-qualité disposent chacun d’une alimentation fantôme 48V ainsi qu’un bouton Air (exclusif pour cette troisième génération). Les guitares et basses électriques peuvent également être connectées directement à ces prises, l'impédance étant ajustée en conséquence. Dans l’ensemble, une super interface au look très attrayant et à un prix raisonnable.",
+      "prix": 150.25,
+      "categorie": "musique"
     },
     {
       "id": 8,
       "title": "Enceinte",
       "marque": "KRK",
-      "image": "https://thumbs.static-thomann.de/thumb/orig/pics/bdb/473958/14489139_800.jpg"
+      "image": "https://thumbs.static-thomann.de/thumb/orig/pics/bdb/473958/14489139_800.jpg",
+      "description": "Reçues rapidement, très bien emballées...premières impressions très positives...\nCe sont mes premières enceintes de monitoring...j’ai longtemps hésité eu égard au choix disponible pour ce type de matériel...\nJ.ai longuement comparé et lu les différents commentaires sur chacune des différentes marques....",
+      "prix": 450.25,
+      "categorie": "musique"
     },
     {
       "id": 9,
       "title": "Velo",
       "marque": "Decathlon",
-      "image": "https://www.les-cyclistes-branches.com/wp-content/uploads/2017/03/velo-urbain-cube-les-cyclistes-branches-paris.jpg"
+      "image": "https://www.les-cyclistes-branches.com/wp-content/uploads/2017/03/velo-urbain-cube-les-cyclistes-branches-paris.jpg",
+      "description": "Ce VTT 27,5\" est conçu pour vos 1ères randonnées VTT, par temps sec, jusqu'à 1h30.\n\nEfficacité ? Robustesse ? Les 2 s'il vous plaît ! Franchissez sans peine et sans casse vos premiers obstacles : cadre aluminium léger et roues en 27,5'' montées sur jantes double parois.",
+      "prix": 250.25,
+      "categorie": "sport"
     },
     {
       "id": 10,
       "title": "Chaussure",
       "marque": "DC",
-      "image": "https://images.boardriders.com/globalGrey/dcshoes-products/all/default/large/adys300104_dcshoes,p_blw_frt2.jpg"
+      "image": "https://images.boardriders.com/globalGrey/dcshoes-products/all/default/large/adys300104_dcshoes,p_blw_frt2.jpg",
+      "description": "Bénéficiez d'un maximum de résistance et de respirabilité là où vous en avez le plus besoin. Avec sa conception en daim au niveau des zones d'usure, comme la pointe et le talon, et en toile au milieu du pied, la Nike SB Chron Solarsoft offre le parfait équilibre.Grâce à sa semelle de propreté qui garantit un amorti confortable et un bon maintien à chaque pas, ce modèle bas et souple s'imposera rapidement comme un incontournable de votre collection.",
+      "prix": 50.25,
+      "categorie": "vetement"
     },
     {
       "id": 11,
       "title": "Piano",
       "marque": "Korg",
-      "image": "https://thumbs.static-thomann.de/thumb/orig/pics/bdb/430989/13421106_800.jpg"
+      "image": "https://thumbs.static-thomann.de/thumb/orig/pics/bdb/430989/13421106_800.jpg",
+      "description": "Un très bon rapport qualité prix, idéal pour ceux qui démarrent le piano et/ou ceux qui ne sont pas certains de continuer à jouer sur le long terme. L'ayant acheté pour reprendre le piano après plusieurs années d'arrêt, n'étant pas sûr à 100% de continuer longtemps au départ, j'ai préféré viser l'entrée de gamme et ai été agréablement surpris de la qualité du p-45 que j'ai acheté 387 euros il y a un peu plus d'un an.",
+      "prix": 390.25,
+      "categorie": "musique"
     }
   ]
 
